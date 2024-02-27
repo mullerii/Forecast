@@ -8,6 +8,12 @@
 	"attribute vec2 position;\n" +
 	"varying vec2 pos;\n" +
 
+const customJestConfig = {
+  testMatch: ['**/*.test.js', '**/*.test.ts', '**/*.test.tsx'],
+  setupFilesAfterEnv: ['<rootDir>/jest-setup-after-env.ts'],
+  verbose: true,
+  rootDir: 'test',		
+
 
 
 const objectsContents = [];
